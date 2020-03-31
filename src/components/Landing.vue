@@ -2,18 +2,18 @@
   <v-container fluid>
     <v-layout row wrap>
       <Heading title="COVID-19 Tracker" />
-      <California />
+      <UnitedStates />
     </v-layout>
   </v-container>
 </template>
 
 <script>
-import California from '@/components/states/California'
+import UnitedStates from '@/components/UnitedStates'
 
 export default {
   name: 'Landing',
   components: {
-    California
+    UnitedStates
   }
 }
 </script>
