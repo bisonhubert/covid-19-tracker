@@ -29,3 +29,7 @@ export const TOTAL_CITIES = 'TOTAL_CITIES'
 // Admin - Users
 export const USERS = 'USERS'
 export const TOTAL_USERS = 'TOTAL_USERS'
+// state data
+export const STATE = 'STATE'
+export const STATES = 'STATES'
+export const TOTAL_STATES = 'TOTAL_STATES'
