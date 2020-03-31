@@ -2,6 +2,7 @@
   <v-app dark>
     <v-content>
       <loading />
+      <Header title="COVID-19 Tracker" />
       <transition name="fade" mode="out-in">
         <router-view />
       </transition>

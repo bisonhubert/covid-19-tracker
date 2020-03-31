@@ -19,7 +19,7 @@ const mutations = {
 }
 
 const state = {
-  appTitle: 'My Awesome App',
+  appTitle: 'COVID-19 Tracker',
   appVersion: packageJson.version
 }
 
