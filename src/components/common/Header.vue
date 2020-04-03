@@ -3,8 +3,9 @@
     <h1 class="display-2 font-weight-bold">{{ title }}</h1>
     <p>
       A visualization of COVID-19 by state. Data pulled from
-      <a href="https://covidtracking.com/api/">The COVID Tracking Project</a>.
-      Updated daily.
+      <a href="https://covidtracking.com/api/" target="_blank"
+        >The COVID Tracking Project</a
+      >. Updated daily.
     </p>
   </v-flex>
 </template>
