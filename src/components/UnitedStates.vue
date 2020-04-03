@@ -1,11 +1,8 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <div v-if="loading">
-        {{ loadingMsg }}
-      </div>
-      <div v-else>
-        {{ this.statesList }}
+      <div v-if="!loading">
+        <Map :states="statesList" />
       </div>
     </v-layout>
   </v-container>
@@ -13,9 +10,13 @@
 
 <script>
 import { mapActions, mapState } from 'vuex'
+import Map from '@/components/maps/Map'
 
 export default {
   name: 'UnitedStates',
+  components: {
+    Map
+  },
   data() {
     return {
       error: undefined,
@@ -23,6 +24,7 @@ export default {
     }
   },
   computed: {
+    // can use mapGetters here
     ...mapState(['stateData']),
     loadingMsg() {
       return this.error ? this.error : 'Fetching data...'

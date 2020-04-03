@@ -11,7 +11,6 @@ const apiClient = axios.create({
 
 export default {
   getStatesHistorical() {
-    console.log('getStatesHistorical calling apiClient')
     return apiClient.get('/states/daily')
   }
 }

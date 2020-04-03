@@ -1,6 +1,6 @@
 import * as types from '@/store/mutation-types'
 import api from '@/services/api/stateData'
-import { buildSuccess, handleError } from '@/utils/utils.js'
+import { handleError } from '@/utils/utils.js'
 
 const getters = {
   states: state => state.states,
@@ -28,7 +28,6 @@ const actions = {
 
 const mutations = {
   [types.STATES](state, states) {
-    console.log('state.states = states', states)
     state.states = states
   },
   [types.TOTAL_STATES](state, count) {
